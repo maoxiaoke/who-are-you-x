@@ -1,0 +1,14 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './src/**/*.{ts,tsx}',
+  ],
+  theme: {
+    extend: {},
+  },
+  corePlugins: {
+    preflight: false // avoid resetting site styles
+  },
+  plugins: [],
+};
+

@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wayx-badge {
+  /* Intentionally minimal: inherit X styles */
+  @apply align-baseline;
+}

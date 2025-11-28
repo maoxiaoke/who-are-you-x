@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Who Are You (X.com)",
+  "version": "0.1.0",
+  "description": "Show who an X user is next to their posts.",
+  "host_permissions": [
+    "https://raw.githubusercontent.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://www.x.com/*",
+        "https://twitter.com/*",
+        "https://www.twitter.com/*"
+      ],
+      "js": ["content-script.js"],
+      "css": ["content-style.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
+
